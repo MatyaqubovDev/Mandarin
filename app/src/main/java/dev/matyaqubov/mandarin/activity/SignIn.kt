@@ -20,6 +20,9 @@ class SignIn : AppCompatActivity() {
         val et_email=findViewById<EditText>(R.id.et_email)
         et_email.addTextChangedListener {
             if (isValied(it.toString())){
+                et_email.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0,R.drawable.ic_check, 0);
+            } else{
+                et_email.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0,R.drawable.ic_error, 0);
 
             }
         }
