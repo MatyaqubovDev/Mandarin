@@ -59,14 +59,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                app:errorEnabled="true"
+                app:boxBackgroundMode="outline">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:drawableEnd="@drawable/ic_error"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                app:passwordToggleEnabled="true"
+                android:hint="Password"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Email"
-                    android:inputType="textEmailAddress"
-                    android:drawableEnd="@drawable/ic_check"/>
+                    android:inputType="textPassword"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
 
