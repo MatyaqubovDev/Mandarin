@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Mandarin</string>
+    <string name="sign_in_account">Sign in Account</string>
 </resources>
