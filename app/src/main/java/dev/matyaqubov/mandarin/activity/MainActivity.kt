@@ -1,7 +1,9 @@
 package dev.matyaqubov.mandarin.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import dev.matyaqubov.mandarin.R
@@ -45,6 +47,12 @@ class MainActivity : AppCompatActivity() {
         mainPagerAdapter = MainPagerAdapter(pages, this)
         viewPager.adapter = mainPagerAdapter
         mainTab.setupWithViewPager(viewPager)
+
+        val button =findViewById<Button>(R.id.btn_login)
+        button.setOnClickListener {
+           val intent = Intent(this,SignIn::class.java)
+            startActivity(intent)
+        }
 
     }
 }
